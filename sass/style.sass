@@ -1,0 +1,630 @@
+@import "partials/normalize"
+@import "partials/typography"
+@import "partials/grid"
+
+@import "partials/variables"
+
+html
+    height: 100%
+
+body
+    background: $black
+    padding: 10px
+    font-family: $source-sans-lt
+    height: 100%
+
+.highlight
+    color: $primary
+    font-weight: 700
+
+.section-title
+    font-size: 2.6em
+    font-family: $source-sans-bold
+    color: darken($black, 10%)
+    text-transform: uppercase
+    line-height: 1.0
+    margin: 10px auto 20px
+
+.section-subtitle
+    font-size: 1.5em
+    font-family: $source-sans-bold
+    color: darken($black, 10%)
+    text-transform: uppercase
+    line-height: 1.3
+    margin: 0px auto
+    border-bottom: 1px solid #b0b8c5
+
+.timeline-progress
+    background: transparent url(../images/timeline-bg.png) repeat-y center center
+    // background-size: 400px 9px
+
+.full_screen_bg
+    background:  url(../images/background2.jpg) repeat center center
+    background-size: cover
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+
+.content-wrapper
+    max-width: 1170px
+    margin: 5px auto 0
+
+    .Header
+        position: fixed
+        width: 210px
+        left: -215px
+        top: 0px
+        height: 100%
+        background: rgba(0, 0, 0, 0.7)
+        color: $white
+        padding: 40px 20px
+        -webkit-transition: all 0.3s ease-in-out
+        -moz-transition: all 0.3s ease-in-out
+        transition: all 0.3s ease-in-out
+        z-index: 6
+        .close_btn
+            color: #e6e6e6
+            top: 20px
+            position: absolute
+            right: 20px
+            font-size: 1.4em
+            font-weight: normal
+            outline: none
+        &__nav
+            position: relative
+        &__name
+            border: 2px solid #e6e6e6
+            padding: 5px
+            color: #e6e6e6
+            display: block
+            margin: 50px 0 10px
+            font-size: 1.5em
+            font-family: $source-sans
+            text-align: center
+            text-transform: uppercase
+        &__navlist
+            margin-bottom: 30px
+        &__navitem
+            padding: 10px 0
+            text-transform: uppercase
+            border-bottom: 1px dotted #a7a7a7
+        &__navlink
+            color: $white
+            font-size: 1.2em
+            text-decoration: none
+            outline: none
+        &__btnlink
+            display: block
+            border: 2px solid #e6e6e6
+            padding: 8px 12px
+            text-align: left
+            text-transform: uppercase
+            margin: 10px 0
+            color: #e6e6e6
+            text-decoration: none
+            .fa
+                margin-right: 4px
+        &.active
+            left: 0
+
+    .toggle_menu
+        position: fixed
+        left: 0px
+        top: 60px
+        z-index: 5
+        .btn
+            color: $white
+            font-size: 1.3em
+            background: rgba(0, 0, 0, 0.8)
+            border-radius: 0
+            padding: 0.5em 1em
+            font-family: $source-sans-bold
+            &:hover
+                background: rgba(0, 0, 0, 0.55)
+            .fa
+                margin-right: 3px
+
+    .Body
+        display: block
+        margin: auto
+        max-width: 960px
+
+    .Body__top-colors
+        display: flex
+        align-items: center
+        width: 100%
+
+    .Body__top-color
+        padding: 5px
+        width: 100%
+
+        &.top__color1
+            background: $primary
+        &.top__color2
+            background: #031634
+        &.top__color3
+            background: #da222b
+
+    .Body__content
+        background: url(../images/paper-bg2.png) no-repeat top left, url(../images/paper-bg-bot.png) no-repeat bottom right
+        background-color: $light-gray
+        margin-bottom: 40px
+        margin-top: 10px
+        padding: 0
+        position: relative
+        overflow: hidden
+        -webkit-transition: all 0.4s ease-in-out
+        -moz-transition: all 0.4s ease-in-out
+        transition: all 0.4s ease-in-out
+
+    .Body__progressbg
+        background: $primary
+        position: absolute
+        top: 60px
+        width: 188px
+        height: 228px
+        margin-left: 95px
+        // z-index: 99
+
+    .Body__leftside
+        background: $light-gray
+        position: absolute
+        top: 10px
+        width: 55px
+        height: 98%
+
+    .Body__rightside
+        background: $light-gray
+        position: absolute
+        top: 10px
+        width: 55px
+        height: 98%
+        right: 0
+        left: auto
+
+    .Body__section
+        padding: 15px 20px
+        .timeline-margin
+            padding: 0px 15px
+
+    .Top
+        text-align: right
+        padding-bottom: 0
+        padding-top: 15px
+        .bg
+            display: none
+
+        &__buttons
+            background: #031634
+            color: $white
+            padding: 4px 12px
+            margin: 2px 0px 2px 8px
+            font-size: 1.1em
+            border-radius: 3px
+            white-space: nowrap
+            text-align: center
+            text-decoration: none
+            -webkit-transition: all 0.3s ease-in-out
+            -moz-transition: all 0.3s ease-in-out
+            transition: all 0.3s ease-in-out
+            .text
+                font-size: 0.75em
+                text-transform: uppercase
+                padding-left: 7px
+                display: inline-block
+                font-family: $source-sans
+                text-align: right
+                width: 0
+                margin: 0
+                padding: 0
+                overflow: hidden
+                vertical-align: middle
+                -webkit-transition: all 0.3s ease-in-out
+                -moz-transition: all 0.3s ease-in-out
+                transition: all 0.3s ease-in-out
+            &:hover
+                .text
+                    width: 100px
+
+    .Aboutme
+        padding-top: 20px
+        margin: 0px auto
+        &__photo
+            width: 200px
+            height: 200px
+            border-radius: 50%
+            border: 5px solid $primary
+            margin: 10px auto
+            overflow: hidden
+            background: $white
+            &_img
+                display: block
+                width: 100%
+                border-radius: 50%
+                padding: 4px
+                margin: auto
+                -webkit-transition: all 0.3s linear
+                -moz-transition: all 0.3s linear
+                transition: all 0.3s linear
+
+        &__headline
+            text-align: center
+            font-size: 2.2em
+            border-bottom: 1px solid $primary
+            margin: 0
+            line-height: 1.5
+            margin-bottom: 5px
+            .highlight
+                font-family: $source-sans-bold
+        &__headline2
+            text-align: center
+            font-size: 1.5em
+            margin: 0
+            color: #555555
+        &__desc
+            font-size: 1.2em
+            margin-bottom: 0
+            margin-top: 10px
+            line-height: 1.2
+
+    .Profile
+        &__value
+            margin-top: 8px
+            margin-bottom: 0
+
+    .Skills
+        &__type
+            margin: 0
+            text-transform: uppercase
+            color: darken($black, 10%)
+            font-family: $source-sans-bold
+            border-bottom: 1px solid lighten($black, 50%)
+        &__item
+            .progress
+                position: relative
+                margin-bottom: 7px
+                background-color: #f5f5f5
+                border-radius: 4px
+                -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1)
+                box-shadow: inset 0 1px 2px rgba(0,0,0,.1)
+                overflow: hidden
+                &-bar
+                    width: 100%
+                    background: $primary
+                    height: 25px
+                    z-index: 1
+                    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15)
+                    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15)
+                &-type
+                    z-index: 3
+                    position: absolute
+                    background-color: rgba(25, 25, 25, 0.1)
+                    top: 0
+                    padding: 3px 10px
+                    color: $white
+                    font-family: $source-sans
+                &-completed
+                    z-index: 3
+                    position: absolute
+                    right: 0px
+                    top: 0
+                    padding: 3px 10px
+                    font-family: $source-sans-bold
+
+    .Project
+        &__list
+            width: 100%
+            display: block
+            margin: 20px auto
+            text-align: center
+        &__item
+            max-width: 300px
+            margin-bottom: 30px
+            float: left
+            padding: 0px 5px
+        &__name
+            font-size: 1.4em
+            margin: 12px auto 5px
+            line-height: 1.1
+            text-align: center
+            font-family: $source-sans-bold
+        &__image
+            width: 100%
+            box-shadow: 1px 1px 2px rgba(28, 32, 39, 0.65)
+        &__description
+            margin: auto
+            text-align: center
+            display: none
+            .modal_content
+                display: none
+            p
+                margin: 0
+                font-size: 1.1em
+                line-height: 1.1
+                display: none
+        &__more
+            background: $primary
+            color: #FFF
+            padding: 6px 15px
+            font-size: 1.2em
+            border-radius: 3px
+            outline: none
+            text-decoration: none
+            display: inline-block
+            &:hover
+                background: darken($primary, 5%)
+                -webkit-transition: all 0.3s ease-in-out
+                -moz-transition: all 0.3s ease-in-out
+                transition: all 0.3s ease-in-out
+
+    .Contact
+        &__description
+            font-size: 16px
+            .link
+                color: $primary
+
+    .Footer
+        padding: 20px 30px
+        display: block
+        background: transparent
+
+        p
+            line-height: 1.2
+        &__credit
+            text-align: center
+            padding: 20px 0 11px
+            .socials
+                display: block
+                text-align: center
+                .link
+                    color: $black
+                    font-size: 1.7em
+                    display: inline-block
+                    margin: 2px 3px 0
+        &__thanks
+            margin: 0
+            font-size: 3em
+            font-family: $source-sans-bold
+        &__quote
+            margin: 20px 0 40px
+            h2
+                margin: 0
+                line-height: 1
+                font-size: 2.2em
+                font-style: italic
+            p
+                margin: 10px 0 0 0
+                font-size: 1.2em
+                line-height: 1
+
+.bg-overlay
+    position: absolute
+    top: 0px
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    display: none
+    z-index: 10
+
+.Modal
+    background: #FFF
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.85)
+    max-width: 800px
+    width: 90%
+    position: absolute
+    left: 50%
+    top: 9%
+    margin-left: -400px
+    text-align: center
+    border-radius: 5px
+    background-clip: padding-box
+    overflow: hidden
+    z-index: 50
+    display: none
+    .close-btn
+        position: absolute
+        top: 10px
+        right: 20px
+        cursor: pointer
+        font-size: 1.5em
+        color: $white
+    &__header
+        padding: 16px 20px
+        background: $primary
+        color: $white
+        text-align: left
+        background-clip: padding-box
+        h2
+            margin: 0
+            line-height: 1
+            font-family: $source-sans-bold
+    &__content
+        text-align: left
+        padding: 30px 20px
+    .modal_content
+        position: relative
+        text-align: left
+    .project_title
+        margin: 10px 0 0
+        font-size: 1.7em
+        font-family: $source-sans-bold
+        line-height: 1.5
+    .project_desc
+        font-size: 1.1em
+        padding: 0px
+        margin: 10px 0
+    .project_company,
+    .project_link,
+    .project_technology
+        font-size: 1em
+        margin: 4px 0
+    h3
+        font-size: 3em
+        margin: 18px auto 15px
+        font-family: $source-sans
+        line-height: 1
+    p
+        font-size: 1.67em
+        padding: 0px
+        line-height: 1.2
+        margin-top: 20px
+    img
+        width: 100%
+        float: left
+        max-width: 400px
+
+
+// ********* Media Queryies ************** //
+@media (min-width:992px)
+    .content-wrapper
+        margin-top: 40px
+
+        .toggle_menu
+            top: 60px
+            .btn
+                background: rgba(0, 0, 0, 0.35)
+
+        .Body__content
+            background-color: #e6e6e6
+            &.moveleft
+                margin-left: 30px
+        .Body__section
+            position: relative
+            padding: 0px 70px
+            .timeline-margin
+                display: flex
+                padding: 0px 0px
+                .timeline-image
+                    display: inline-block
+                    height: auto
+                    flex: 1
+                    width: 17%
+                    vertical-align: top
+                    &.headline
+                        background: rgba(255,255,255,0) url(../images/progress-section-title3.png) no-repeat -32px -139px
+                        background-size: 300px 375px
+                    &.point
+                        background: rgba(255,255,255,0) url(../images/progress-point.png) no-repeat -32px -145px
+                        background-size: 300px 375px
+                    &.skill
+                        background: rgba(255,255,255,0) url(../images/progress-education4.png) no-repeat -32px -145px
+                        background-size: 300px 375px
+                    &.work
+                        background: rgba(255,255,255,0) url(../images/progress-work4.png) repeat-y -42px -255px
+                        background-size: 320px 600px
+                    &.email
+                        background: rgba(255,255,255,0) url(../images/progress-mail3.png) no-repeat -32px -145px
+                        background-size: 300px 375px
+                    &.end
+                        background: rgba(255,255,255,0) url(../images/progress-end-point.png) no-repeat -32px -140px
+                        background-size: 300px 375px
+                .timeline-desc
+                    padding-top: 15px
+                    padding-bottom: 5px
+                    padding-right: 18px
+                    display: inline-block
+                    height: 100%
+                    width: 81.5%
+                    flex: 4
+                    vertical-align: top
+                    background: $light-gray
+                &::after
+                    clear: both
+            &.Top
+                padding: 18px 20px 60px
+                background-color: $light-gray
+                position: relative
+                .bg
+                    display: block
+                    position: absolute
+                    left: 0
+                    top: 0
+                    width: 301px
+                    height: 255px
+                    background: transparent url(../images/paper-bg2.png) no-repeat top left
+                    z-index: 2
+
+        .Aboutme
+            text-align: left
+            background: rgba(255,255,255,0) url(../images/progress-section-title3.png) no-repeat 14px -75px
+            background-size: 318px 375px
+            &__headline
+                text-align: left
+                font-size: 4em
+                line-height: 1.3
+            &__headline2
+                text-align: left
+            &__photo
+                margin-top: 0
+                z-index: 2
+                position: relative
+                &_img
+                    -webkit-filter: blur(2px)
+                    -moz-filter: blur(2px)
+                    padding: 6px
+                    &:hover
+                        -webkit-filter: blur(0px)
+                        -moz-filter: blur(0px)
+            &__info
+                background-color: $light-gray
+                padding-bottom: 30px
+                padding-left: 40px
+                width: 73%
+                margin-left: 17px
+
+        .Project
+            &__item
+                position: relative
+                margin-bottom: 10px
+                cursor: pointer
+                height: 120px
+                &:hover
+                    .Project__description
+                        opacity: 1
+            &__description
+                position: absolute
+                opacity: 0
+                width: 96%
+                height: 100%
+                top: 0
+                display: block
+                background: rgba(50, 57, 68, 0.9)
+                color: $white
+                padding: 15px
+                display: flex
+                justify-content: center
+                text-align: center
+                flex-direction: column
+                -webkit-transition: all 0.3s ease-in-out
+                -moz-transition: all 0.3s ease-in-out
+                transition: all 0.3s ease-in-out
+                p
+                    font-size: 1.8em
+                    line-height: 1
+                    display: block
+            &__name
+                margin-top: 2px
+                font-size: 1.5em
+            &__more
+                margin-top: 20px
+
+        .Footer
+            padding: 40px 70px
+            background: $light-gray url(../images/paper-bg-bot.png) no-repeat bottom right
+            &__credit
+                padding: 40px 0 11px
+
+    .bg-overlay
+
+    .Modal
+        .project_title
+            margin: 0
+        .project_desc
+            padding: 0px 10px
+        p
+            padding: 0 19px
+        img
+            margin-right: 18px
