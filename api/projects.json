@@ -1,37 +1,82 @@
 [
   {
+    "name": "SORTCards",
+    "thumbnail": "sortcards.jpg",
+    "description": "Web App for tracking employee attendance, 201 filing and payrolls.",
+    "url": "https://sortcards.com/",
+    "technology": "Laravel, Vue.js - PHP, HTML5, CSS, JavaScript, MySQL",
+    "hidden": false
+  },
+  {
+    "name": "PAYHRA",
+    "thumbnail": "payhra.jpg",
+    "description": "Web App for tracking employee attendance, 201 filing and payrolls.",
+    "employer": "RedLemon Digital Media",
+    "employer_url": "http://redlemonph.com/",
+    "url": "",
+    "technology": "Laravel, Vue.js - PHP, HTML5, CSS, JavaScript, MySQL",
+    "hidden": false
+  },
+  {
+    "name": "RedLemon Digital Media",
+    "thumbnail": "redlemon.jpg",
+    "description": "RedLemon's Website.",
+    "employer": "RedLemon Digital Media",
+    "employer_url": "http://redlemonph.com/",
+    "url": "https://web.archive.org/web/20200513141555/https://redlemonph.com/",
+    "technology": "WordPress - PHP, HTML5, CSS, jQuery, MySQL",
+    "hidden": false
+  },
+  {
+    "name": "FICCO - First Community Cooperative",
+    "thumbnail": "ficco.jpg",
+    "description": "Website for a local Cooperative. Used BeTheme for the general layout and did a custom styling based on the approved design. Animation on the homepage is done using GSAP library.",
+    "employer": "RedLemon Digital Media",
+    "employer_url": "http://redlemonph.com/",
+    "url": "https://ficco.org/",
+    "technology": "WordPress - PHP, HTML5, CSS, jQuery, MySQL",
+    "hidden": false
+  },
+  {
+    "name": "ElectricHub",
+    "thumbnail": "electrichub.jpg",
+    "description": "An eCommerce site for electric bikes, scooters, and motorcycles. Used WooCommerce for this and integrated custom shipping fee rates. Our designer laid out all the layout/design and I did the backend.",
+    "employer": "RedLemon Digital Media",
+    "employer_url": "http://redlemonph.com/",
+    "url": "https://www.electrichub.ph/",
+    "technology": "WordPress (WooCommerce) - PHP, HTML5, CSS, jQuery, MySQL",
+    "hidden": false
+  },
+  {
     "name": "DriveTime - Advice Center",
     "thumbnail": "drivetime3.jpg",
-    "description": "A website intended for DriveTime customers which provide advices and tips about business and finances. This is built using the Bones theme with a custom permalink rewrite rules. A non-responsive site.",
+    "description": "A website intended for DriveTime customers which provide advices and tips about business and finances. This is built from the ground-up using the Bones starter theme with a custom permalink rewrite rules. A non-responsive site.",
     "employer": "RedLemon Digital Media",
     "employer_url": "http://redlemonph.com/",
     "url": "http://drivelatest.fbdev.net/",
     "technology": "WordPress - PHP, HTML5, SASS, jQuery, MySQL",
     "hidden": false
   },
-
   {
     "name": "Digma",
     "thumbnail": "digma.jpg",
-    "description": "A collection of articles and events about Arts and Artitechture. Schools and organizations can submit their events using a custom form and there's also a donation page which is integrated using PayPal API. I worked mostly on the client side, while my partner on the server side.",
+    "description": "A collection of articles and events about Arts and Artitechture. Schools and organizations can submit their events using a custom form and there's also a donation page which is integrated using PayPal API. I worked mostly on the client side, while my partner on the server side. This is built from the ground-up using the Bones starter theme.",
     "employer": "RedLemon Digital Media",
     "employer_url": "http://redlemonph.com/",
     "url": "http://www.digma.us/",
     "technology": "WordPress - PHP, HTML5, CSS3, jQuery, MySQL",
     "hidden": false
   },
-
   {
     "name": "DriveTime - Complaint Center",
     "thumbnail": "drivetime2.jpg",
-    "description": "A complaint center which allows DriveTime customers to submit their concerns and complaints. Also have a couple of FAQ articles. This is the 2nd time to use Bones and SASS. A responsive website.",
+    "description": "A complaint center which allows DriveTime customers to submit their concerns and complaints. Also have a couple of FAQ articles. This is the 2nd time to use Bones starter theme and SASS. A responsive website.",
     "employer": "RedLemon Digital Media",
     "employer_url": "http://redlemonph.com/",
     "url": "http://drivecomplaint.fbdev.net/",
     "technology": "WordPress - PHP, HTML5, SASS, jQuery, MySQL",
     "hidden": false
   },
-
   {
     "name": "Paragon Life Homes",
     "thumbnail": "paragon.jpg",
@@ -42,7 +87,6 @@
     "technology": "WordPress - PHP, HTML5, CSS, jQuery, MySQL",
     "hidden": false
   },
-
   {
     "name": "Global Leadership Institute",
     "thumbnail": "gli.jpg",
@@ -53,11 +97,10 @@
     "technology": "WordPress - PHP, HTML5, CSS, jQuery, MySQL",
     "hidden": false
   },
-
   {
     "name": "DriveTime Dealership",
     "thumbnail": "drivetime1.jpg",
-    "description": "A single delearship website from DriveTime specifically for Mesa, Arizona branch. This shows list of cars and details based on the Make and Model, which is fetched from DriveTime's internal API. First project to use Bones theme and SASS.",
+    "description": "A single delearship website from DriveTime specifically for Mesa, Arizona branch. This shows list of cars and details based on the Make and Model, which is fetched from DriveTime's internal API. First project to use Bones starter theme and SASS.",
     "employer": "RedLemon Digital Media",
     "employer_url": "http://redlemonph.com/",
     "url": "http://drivetime.fbdev.net/",
@@ -67,22 +110,21 @@
   {
     "name": "Leyeah Packaging",
     "thumbnail": "leyeah.jpg",
-    "description": "Yandex for building interactive cross platform web applications. ad asdas adpaipdapaojdajd",
+    "description": "Company website which specialized on designing and manufacturing packaging materials.",
     "employer": "RedLemon Digital Media",
     "employer_url": "http://redlemonph.com/",
     "url": "http://leyeah.fbdev.net/",
     "technology": "WordPress - PHP, HTML5, CSS, jQuery, MySQL",
-    "hidden": true
+    "hidden": false
   },
-
   {
     "name": "FreeBosh",
     "thumbnail": "freebosh.jpg",
-    "description": "Pure Function is a function. Browserify is an optimization used with the problem within the number of this for other projects like SpiderMonkey, is a dependency manager for JavaScript. Ember is by a clean underlying data. ",
+    "description": "Helped with the development of FreeBosh website and did most of the pages. FreeBosh is an art website design company.",
     "employer": "RedLemon Digital Media",
     "employer_url": "http://redlemonph.com/",
     "url": "http://www.freebosh.com/",
     "technology": "WordPress - PHP, HTML5, CSS, jQuery, MySQL",
-    "hidden": true
+    "hidden": false
   }
 ]
